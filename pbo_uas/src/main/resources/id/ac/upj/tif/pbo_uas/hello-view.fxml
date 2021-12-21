@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.upj.tif.pbo_uas.HelloController">
+   <children>
+      <Label layoutX="222.0" layoutY="4.0" text="Aplikasi Tumbuhan ">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="12.0" layoutY="288.0" onMouseClicked="#handleClick" prefHeight="332.0" prefWidth="577.0">
+        <columns>
+          <TableColumn fx:id="kolom_nama" prefWidth="139.0" text="Nama" />
+          <TableColumn fx:id="kolom_penjelasan" prefWidth="437.0" text="Penjelasan" />
+        </columns>
+      </TableView>
+      <Label layoutX="12.0" layoutY="49.0" prefHeight="21.0" prefWidth="48.0" text="Nama" />
+      <Label layoutX="12.0" layoutY="85.0" prefHeight="21.0" prefWidth="77.0" text="Penjelasan" />
+      <TextField fx:id="nama_text" layoutX="97.0" layoutY="44.0" prefHeight="31.0" prefWidth="491.0" />
+      <TextArea fx:id="penjelasan_text" layoutX="97.0" layoutY="85.0" prefHeight="150.0" prefWidth="491.0" />
+       <Button fx:id="button_simpan" layoutX="12.0" layoutY="244.0" mnemonicParsing="false" onAction="#button_simpan_onclick" text="Simpan" />
+      <Button fx:id="button_update" layoutX="97.0" layoutY="244.0" mnemonicParsing="false" onAction="#button_update_onclick" text="Update " />
+      <Label layoutX="183.0" layoutY="244.0" prefHeight="31.0" prefWidth="424.0" text="Data Berhasil Disimpan!!!" />
+      <Button fx:id="button_hapus" layoutX="509.0" layoutY="248.0" mnemonicParsing="false" onAction="#onClickButtonHapus" text="Hapus" />
+      <Label fx:id="idlabel" layoutX="16.0" layoutY="160.0" prefHeight="21.0" prefWidth="48.0" text="Label" />
+      <Button fx:id="button_logout" layoutX="509.0" layoutY="635.0" mnemonicParsing="false" onAction="#onClickButtonLogout" text="logout" />
+   </children>
+</Pane>

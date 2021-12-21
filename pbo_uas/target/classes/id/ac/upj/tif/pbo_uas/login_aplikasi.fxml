@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="281.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="id.ac.upj.tif.pbo_uas.login_aplikasi">
+   <children>
+      <Label layoutX="52.0" layoutY="40.0" prefHeight="50.0" prefWidth="471.0" style="-fx-background-color: green;" />
+      <Button fx:id="button_start" layoutX="404.0" layoutY="194.0" mnemonicParsing="false" onAction="#OnClickButtonStart" prefHeight="31.0" prefWidth="119.0" text="start">
+         <font>
+            <Font name="Franklin Gothic Medium" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="136.0" layoutY="16.0" prefHeight="98.0" prefWidth="322.0" text="SELAMAT DATANG DI APLIKASI " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="225.0" prefHeight="31.0" prefWidth="385.0" text="Anda dapat menekan start pada button start bila ingin memulai aplikasi">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_username" layoutX="159.0" layoutY="113.0" prefHeight="31.0" prefWidth="364.0" />
+      <Label layoutX="52.0" layoutY="103.0" prefHeight="50.0" prefWidth="134.0" text="Username" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="144.0" prefHeight="50.0" prefWidth="134.0" text="Password" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="text_password" layoutX="159.0" layoutY="154.0" prefHeight="31.0" prefWidth="364.0" />
+   </children>
+</AnchorPane>
